@@ -66,7 +66,7 @@ public final class KeychainManager: KeychainManagerHandler {
             kSecClass: kSecClassGenericPassword,
             kSecAttrAccount: key,
             kSecValueData: value.getData(),
-            kSecAttrAccessible: kSecAttrAccessibleWhenUnlocked
+            kSecAttrAccessible: kSecAttrAccessibleWhenUnlockedThisDeviceOnly
         ]
         query.addAccessGroupWhenPresent(accessGroup: accessGroup)
     
